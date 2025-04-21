@@ -1,4 +1,5 @@
 import { existsSync } from 'jsr:@std/fs';
+import { RouteCache } from './lib/RouteCache.ts';
 
 /**
  * Doing an http server this way would be better
@@ -7,9 +8,28 @@ import { existsSync } from 'jsr:@std/fs';
 
 // TODO: use Deno.kv when the server starts
 //  to store resolved file routes
-function resolveRouteFile(pathname: string) {
-  const routePath = ('./routes' + pathname).replace(/\/+/g, '/');
-  return existsSync(routePath) ? routePath : '';
+
+const cachedRoutes = new RouteCache();
+
+async function resolveRouteFile(routePath: string, filePath: string) {
+  let _filePath;
+
+  const routeExists = (
+    !!(_filePath = await cachedRoutes.getCachedRoute(routePath) as string)
+    || existsSync((_filePath = `./routes/${filePath}.tsx`))
+    || existsSync((_filePath = `./routes/${filePath}.ts`))
+    || existsSync((_filePath = `./routes/${filePath}.jsx`))
+    || existsSync((_filePath = `./routes/${filePath}.js`))
+
+    || false
+  );
+
+  if (routeExists) {
+    await cachedRoutes.addRoute(routePath, _filePath);
+    return _filePath;
+  }
+
+  return null;
 }
 
 async function handler(req: Request): Promise<Response> {
@@ -25,76 +45,48 @@ async function handler(req: Request): Promise<Response> {
   // check for files/folders with '_' prefixes
 
   // only slashes??? it's the ROOT!
-  const rootPath = /^\/+$/.test(pathname) ? (
-    resolveRouteFile('/__root.ts') ||
-    resolveRouteFile('/__root.tsx') ||
-    resolveRouteFile('/__root.js') ||
-    resolveRouteFile('/__root.jsx') ||
-    ''
-  ) : '';
+  const rootPath = /^\/+$/.test(pathname) ? '__root' : '';
 
   // strip leading and trailing slashes '/foo/' -> 'foo'
-  pathname = pathname.replace(/^\/+|\/+$/g, '');
+  // pathname = pathname.replace(/^\/+|\/+$/g, '');
 
-  let pathParts = pathname.split('/');
-  let lastPart = pathParts.pop();
-  let basePath = pathParts.join('/');
-  let fullPath = basePath + '/' + lastPart;
+  let pathParts = [], lastPart = '', basePath = '', routePath = '';
+
+  if (!rootPath) {
+    pathParts = pathname.split('/').filter(Boolean);
+    lastPart = pathParts.pop() || '';
+    basePath = pathParts.join('/');
+    routePath = basePath ? (basePath + '/' + lastPart) : lastPart;
+  }
+
+  // TODO: crawl 'routes' directory to find valid routes
 
   // direct check
   const fileRoute = (
-    rootPath
-    // non-plused routes
-    || resolveRouteFile(`/${fullPath}/_route.ts`)
-    || resolveRouteFile(`/${fullPath}/_route.tsx`)
-    || resolveRouteFile(`/${fullPath}/_route.js`)
-    || resolveRouteFile(`/${fullPath}/_route.jsx`)
+    (rootPath ? (await resolveRouteFile('/', '__root')) : '')
 
-    || resolveRouteFile(`/${basePath}/_${lastPart}.ts`)
-    || resolveRouteFile(`/${basePath}/_${lastPart}.tsx`)
-    || resolveRouteFile(`/${basePath}/_${lastPart}.js`)
-    || resolveRouteFile(`/${basePath}/_${lastPart}.jsx`)
+    || await cachedRoutes.getCachedRoute(`/${routePath}`)
+    || await cachedRoutes.getCachedRoute(routePath)
 
-    || resolveRouteFile(`/${basePath}/${lastPart}/_${lastPart}.ts`)
-    || resolveRouteFile(`/${basePath}/${lastPart}/_${lastPart}.tsx`)
-    || resolveRouteFile(`/${basePath}/${lastPart}/_${lastPart}.js`)
-    || resolveRouteFile(`/${basePath}/${lastPart}/_${lastPart}.jsx`)
+    || await resolveRouteFile(`/${routePath}`, `${routePath}/_route`)
+    || await resolveRouteFile(`/${routePath}`, `${routePath}/_${lastPart}`)
+    || await resolveRouteFile(`/${routePath}`, `${routePath}`)
 
     // plused routes
-    || resolveRouteFile(`/+${fullPath}/_route.ts`)
-    || resolveRouteFile(`/+${fullPath}/_route.tsx`)
-    || resolveRouteFile(`/+${fullPath}/_route.js`)
-    || resolveRouteFile(`/+${fullPath}/_route.jsx`)
-
-    || resolveRouteFile(`/+${basePath}/${lastPart}/_${lastPart}.ts`)
-    || resolveRouteFile(`/+${basePath}/${lastPart}/_${lastPart}.tsx`)
-    || resolveRouteFile(`/+${basePath}/${lastPart}/_${lastPart}.js`)
-    || resolveRouteFile(`/+${basePath}/${lastPart}/_${lastPart}.jsx`)
-
-    || resolveRouteFile(`/+${basePath}/_${lastPart}.ts`)
-    || resolveRouteFile(`/+${basePath}/_${lastPart}.tsx`)
-    || resolveRouteFile(`/+${basePath}/_${lastPart}.js`)
-    || resolveRouteFile(`/+${basePath}/_${lastPart}.jsx`)
-
-    || resolveRouteFile(`/${fullPath}.ts`)
-    || resolveRouteFile(`/${fullPath}.tsx`)
-    || resolveRouteFile(`/${fullPath}.js`)
-    || resolveRouteFile(`/${fullPath}.jsx`)
-
-    || resolveRouteFile(`/+${fullPath}.ts`)
-    || resolveRouteFile(`/+${fullPath}.tsx`)
-    || resolveRouteFile(`/+${fullPath}.js`)
-    || resolveRouteFile(`/+${fullPath}.jsx`)
+    || await resolveRouteFile(`/${routePath}`, `+${routePath}/_route`)
+    || await resolveRouteFile(`/${routePath}`, `+${routePath}/_${lastPart}`)
+    || await resolveRouteFile(`/${routePath}`, `+${routePath}`)
 
     || ''
   );
 
   if (!fileRoute) {
+    await cachedRoutes.showRoutes();
     return new Response('Not found', { status: 404 });
   }
 
   try {
-    module = await import(fileRoute);
+    module = await import(fileRoute as string);
   } catch (_error) {
     return new Response('Not found', { status: 404 });
   }

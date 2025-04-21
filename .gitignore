@@ -1,0 +1,11 @@
+# route 'cache' - saves valid routes as they are accessed
+.routes.json
+
+.env
+.env.local
+.env.*.local
+
+
+.idea
+.vscode
+

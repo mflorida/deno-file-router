@@ -8,6 +8,13 @@
     "useTabs": false,
     "semiColons": true
   },
+  "lint": {
+    "rules": {
+      "exclude": [
+        "prefer-const"
+      ]
+    }
+  },
   "imports": {
     "@std/assert": "jsr:@std/assert@1"
   }
