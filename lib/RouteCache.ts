@@ -12,7 +12,7 @@ for await (const entry of entries) {
 }
 
 // init route cache on startup (when this file loads)
-routes_kv.set(['routes'], {});
+await routes_kv.set(['routes'], {});
 
 export class RouteCache {
   #cachedRoutes = new Map();
