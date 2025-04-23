@@ -12,14 +12,33 @@ for await (const entry of entries) {
 }
 
 // init route cache on startup (when this file loads)
-await routes_kv.set(['routes'], {});
+// (not necessary because Deno KV stores data by the *full* key)
+// await routes_kv.set(['routes'], {});
 
 export class RouteCache {
-  // cachedRoutes = new Map();
+  cachedRoutes = new Map();
 
   constructor() {}
 
-  async getCachedRoute(route: string) {
+  async getCachedRoutes() {
+    if (this.cachedRoutes.size > 0) {
+      // return the things
+    }
+    const routeKvList = routes_kv.list({
+      prefix: ['routes']
+    });
+
+    const routeMap = new Map();
+
+    for await (let routeListEntry of routeKvList) {
+      routeMap.set(routeListEntry.key[1], routeListEntry.value);
+    }
+
+    return Object.fromEntries(routeMap);
+  }
+
+  // get file path for specified url pathname
+  async routeFilePath(route: string) {
     return (
       // this.cachedRoutes.get(route) ||
       (await routes_kv.get(['routes', route])).value
@@ -27,7 +46,7 @@ export class RouteCache {
   }
 
   async addRoute(route: string, filePath: string) {
-    if (!(await this.getCachedRoute(route))) {
+    if (!(await this.routeFilePath(route))) {
       // this.cachedRoutes.set(route, filePath);
       await routes_kv.set(['routes', route], filePath);
       // routes_kv.close();
@@ -35,7 +54,7 @@ export class RouteCache {
     // get the cached file route from the 'local' cache Map
     // return this.cachedRoutes.get(route);
     await this.showRoutes();
-    return await this.getCachedRoute(route);
+    return await this.routeFilePath(route);
   }
 
   async showRoutes() {

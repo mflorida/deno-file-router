@@ -15,7 +15,7 @@ async function resolveRouteFile(routePath: string, filePath: string) {
   let _filePath;
 
   const routeExists = (
-    !!(_filePath = await cachedRoutes.getCachedRoute(routePath) as string)
+    !!(_filePath = await cachedRoutes.routeFilePath(routePath) as string)
     || existsSync((_filePath = `./routes/${filePath}.tsx`))
     || existsSync((_filePath = `./routes/${filePath}.ts`))
     || existsSync((_filePath = `./routes/${filePath}.jsx`))
@@ -36,7 +36,19 @@ async function handler(req: Request): Promise<Response> {
   const url = new URL(req.url);
   const method = req.method;
   let pathname = url.pathname;
-  let module;
+
+  // special things that only run from the same origin
+  // poor man's CORS for same-origin
+  if (url.origin.includes(url.host)) {
+    // special url pathname to list all cached routes
+    // http://hostname:3000/--/route-cache/
+    if (/GET/i.test(req.method) && /^\/--\/route-cache/.test(pathname)) {
+      return new Response(
+        JSON.stringify(await cachedRoutes.getCachedRoutes(), null, 2),
+        { status: 200, statusText: 'OK' },
+      );
+    }
+  }
 
   // 1. check the filesystem for a file at the exact path
   // 2. check for a file prefixed with '_' (underscores)
@@ -65,8 +77,8 @@ async function handler(req: Request): Promise<Response> {
   const fileRoute = (
     (rootPath ? (await resolveRouteFile('/', '__root')) : '')
 
-    || await cachedRoutes.getCachedRoute(`/${routePath}`)
-    || await cachedRoutes.getCachedRoute(routePath)
+    || await cachedRoutes.routeFilePath(`/${routePath}`)
+    || await cachedRoutes.routeFilePath(routePath)
 
     || await resolveRouteFile(`/${routePath}`, `${routePath}/_route`)
     || await resolveRouteFile(`/${routePath}`, `${routePath}/_${lastPart}`)
@@ -84,6 +96,8 @@ async function handler(req: Request): Promise<Response> {
     await cachedRoutes.showRoutes();
     return new Response('Not found', { status: 404 });
   }
+
+  let module;
 
   try {
     module = await import(fileRoute as string);
