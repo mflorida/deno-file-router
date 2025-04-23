@@ -15,25 +15,25 @@ for await (const entry of entries) {
 await routes_kv.set(['routes'], {});
 
 export class RouteCache {
-  #cachedRoutes = new Map();
+  // cachedRoutes = new Map();
 
   constructor() {}
 
   async getCachedRoute(route: string) {
     return (
-      // this.#cachedRoutes.get(route) ||
+      // this.cachedRoutes.get(route) ||
       (await routes_kv.get(['routes', route])).value
     );
   }
 
   async addRoute(route: string, filePath: string) {
     if (!(await this.getCachedRoute(route))) {
-      // this.#cachedRoutes.set(route, filePath);
+      // this.cachedRoutes.set(route, filePath);
       await routes_kv.set(['routes', route], filePath);
       // routes_kv.close();
     }
     // get the cached file route from the 'local' cache Map
-    // return this.#cachedRoutes.get(route);
+    // return this.cachedRoutes.get(route);
     await this.showRoutes();
     return await this.getCachedRoute(route);
   }
