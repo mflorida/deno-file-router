@@ -1,3 +1,4 @@
-export function GET(_req: Request): Response {
-  return new Response(`Goodbye from '/api/greeting/goodbye'`, { status: 200 });
-}
+import { echoResponse } from '../../../../../../lib/echoResponse.ts';
+
+export const GET = (req: { url: string }) => echoResponse(req, import.meta.url);
+

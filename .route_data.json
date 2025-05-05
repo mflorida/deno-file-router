@@ -1,197 +1,241 @@
 {
+  "/": {
+    "route": "/",
+    "routeBase": "/__root",
+    "routeDir": "routes/",
+    "routeFile": "/__root.tsx",
+    "name": "__root.tsx",
+    "path": "routes/__root.tsx"
+  },
   "/-/api": {
     "route": "/-/api/",
-    "routeDir": "++/-/api/++",
-    "routeFile": "++/-/api/++/___.js",
+    "routeBase": "/++/-/api/+",
+    "routeDir": "routes/++/-/api/+/",
+    "routeFile": "/++/-/api/+/___.js",
     "name": "___.js",
-    "path": "routes/++/-/api/++/___.js"
+    "path": "routes/++/-/api/+/___.js"
   },
   "/-/api/+x+": {
     "route": "/-/api/+x+/",
-    "routeDir": "++/-/api",
-    "routeFile": "++/-/api/!+x+!.rt.ts",
+    "routeBase": "/++/-/api/!+x+!",
+    "routeDir": "routes/++/-/api/",
+    "routeFile": "/++/-/api/!+x+!.rt.ts",
     "name": "!+x+!.rt.ts",
     "path": "routes/++/-/api/!+x+!.rt.ts"
   },
   "/-/api/_x_": {
     "route": "/-/api/_x_/",
-    "routeDir": "++/-/api",
-    "routeFile": "++/-/api/!_x_!.rt.ts",
+    "routeBase": "/++/-/api/!_x_!",
+    "routeDir": "routes/++/-/api/",
+    "routeFile": "/++/-/api/!_x_!.rt.ts",
     "name": "!_x_!.rt.ts",
     "path": "routes/++/-/api/!_x_!.rt.ts"
   },
   "/-/api/bar": {
     "route": "/-/api/bar/",
-    "routeDir": "++/-/api/bar",
-    "routeFile": "++/-/api/bar/___.ts",
+    "routeBase": "/++/-/api/bar",
+    "routeDir": "routes/++/-/api/bar/",
+    "routeFile": "/++/-/api/bar/___.ts",
     "name": "___.ts",
     "path": "routes/++/-/api/bar/___.ts"
   },
   "/-/api/bar/baz": {
     "route": "/-/api/bar/baz/",
-    "routeDir": "++/-/api/bar",
-    "routeFile": "++/-/api/bar/baz.route.ts",
+    "routeBase": "/++/-/api/bar/baz",
+    "routeDir": "routes/++/-/api/bar/",
+    "routeFile": "/++/-/api/bar/baz.route.ts",
     "name": "baz.route.ts",
     "path": "routes/++/-/api/bar/baz.route.ts"
   },
   "/-/api/bogus": {
     "route": "/-/api/bogus/",
-    "routeDir": "++/-/api/++",
-    "routeFile": "++/-/api/++/bogus.rt.tsx",
+    "routeBase": "/++/-/api/++/bogus",
+    "routeDir": "routes/++/-/api/++/",
+    "routeFile": "/++/-/api/++/bogus.rt.tsx",
     "name": "bogus.rt.tsx",
     "path": "routes/++/-/api/++/bogus.rt.tsx"
   },
   "/-/api/foo": {
     "route": "/-/api/foo/",
-    "routeDir": "++/-/api/foo",
-    "routeFile": "++/-/api/foo/_route.ts",
+    "routeBase": "/++/-/api/foo",
+    "routeDir": "routes/++/-/api/foo/",
+    "routeFile": "/++/-/api/foo/_route.ts",
     "name": "_route.ts",
     "path": "routes/++/-/api/foo/_route.ts"
   },
   "/-/api/foo/+": {
     "route": "/-/api/foo/+/",
-    "routeDir": "++/-/api/foo/!+!",
-    "routeFile": "++/-/api/foo/!+!/___.jsx",
+    "routeBase": "/++/-/api/foo/!+!",
+    "routeDir": "routes/++/-/api/foo/!+!/",
+    "routeFile": "/++/-/api/foo/!+!/___.jsx",
     "name": "___.jsx",
     "path": "routes/++/-/api/foo/!+!/___.jsx"
   },
   "/-/api/foo/++": {
     "route": "/-/api/foo/++/",
-    "routeDir": "++/-/api/foo/!++!",
-    "routeFile": "++/-/api/foo/!++!/___.ts",
+    "routeBase": "/++/-/api/foo/+!++!+",
+    "routeDir": "routes/++/-/api/foo/+!++!+/",
+    "routeFile": "/++/-/api/foo/+!++!+/___.ts",
     "name": "___.ts",
-    "path": "routes/++/-/api/foo/!++!/___.ts"
+    "path": "routes/++/-/api/foo/+!++!+/___.ts"
   },
   "/-/api/foo/+++": {
     "route": "/-/api/foo/+++/",
-    "routeDir": "++/-/api/foo/++!+++!++",
-    "routeFile": "++/-/api/foo/++!+++!++/__route.jsx",
+    "routeBase": "/++/-/api/foo/++!+++!++",
+    "routeDir": "routes/++/-/api/foo/++!+++!++/",
+    "routeFile": "/++/-/api/foo/++!+++!++/__route.jsx",
     "name": "__route.jsx",
     "path": "routes/++/-/api/foo/++!+++!++/__route.jsx"
   },
+  "/-/api/foo/+-+": {
+    "route": "/-/api/foo/+-+/",
+    "routeBase": "/++/-/api/foo/__!+-+!__",
+    "routeDir": "routes/++/-/api/foo/__!+-+!__/",
+    "routeFile": "/++/-/api/foo/__!+-+!__/_route.ts",
+    "name": "_route.ts",
+    "path": "routes/++/-/api/foo/__!+-+!__/_route.ts"
+  },
   "/-/api/say": {
     "route": "/-/api/say/",
-    "routeDir": "++/-/api/say",
-    "routeFile": "++/-/api/say/+rt.ts",
+    "routeBase": "/++/-/api/say",
+    "routeDir": "routes/++/-/api/say/",
+    "routeFile": "/++/-/api/say/+rt.ts",
     "name": "+rt.ts",
     "path": "routes/++/-/api/say/+rt.ts"
   },
   "/-/api/say/goodbye": {
     "route": "/-/api/say/goodbye/",
-    "routeDir": "++/-/api/say/_goodbye",
-    "routeFile": "++/-/api/say/_goodbye/_route.ts",
+    "routeBase": "/++/-/api/say/_goodbye",
+    "routeDir": "routes/++/-/api/say/_goodbye/",
+    "routeFile": "/++/-/api/say/_goodbye/_route.ts",
     "name": "_route.ts",
     "path": "routes/++/-/api/say/_goodbye/_route.ts"
   },
   "/-/api/say/hello": {
     "route": "/-/api/say/hello/",
-    "routeDir": "++/-/api/say/__hello",
-    "routeFile": "++/-/api/say/__hello/_route.ts",
+    "routeBase": "/++/-/api/say/__hello",
+    "routeDir": "routes/++/-/api/say/__hello/",
+    "routeFile": "/++/-/api/say/__hello/_route.ts",
     "name": "_route.ts",
     "path": "routes/++/-/api/say/__hello/_route.ts"
   },
   "/-/api/x": {
     "route": "/-/api/x/",
-    "routeDir": "++/-/api",
-    "routeFile": "++/-/api/__x__.rt.ts",
+    "routeBase": "/++/-/api/__x__",
+    "routeDir": "routes/++/-/api/",
+    "routeFile": "/++/-/api/__x__.rt.ts",
     "name": "__x__.rt.ts",
     "path": "routes/++/-/api/__x__.rt.ts"
   },
   "/aaa/111": {
     "route": "/aaa/111/",
-    "routeDir": "aaa+/111",
-    "routeFile": "aaa+/111/_route.ts",
+    "routeBase": "/aaa+/111",
+    "routeDir": "routes/aaa+/111/",
+    "routeFile": "/aaa+/111/_route.ts",
     "name": "_route.ts",
     "path": "routes/aaa+/111/_route.ts"
   },
   "/b/c/d/e": {
     "route": "/b/c/d/e/",
-    "routeDir": "b.c.d.e",
-    "routeFile": "b.c.d.e/_rt.ts",
+    "routeBase": "/b.c.d.e",
+    "routeDir": "routes/b.c.d.e/",
+    "routeFile": "/b.c.d.e/_rt.ts",
     "name": "_rt.ts",
     "path": "routes/b.c.d.e/_rt.ts"
   },
   "/ccc": {
     "route": "/ccc/",
-    "routeDir": "ccc",
-    "routeFile": "ccc/_route.tsx",
+    "routeBase": "/ccc",
+    "routeDir": "routes/ccc/",
+    "routeFile": "/ccc/_route.tsx",
     "name": "_route.tsx",
     "path": "routes/ccc/_route.tsx"
   },
   "/ccc/ddd": {
     "route": "/ccc/ddd/",
-    "routeDir": "ccc/ddd",
-    "routeFile": "ccc/ddd/_route.tsx",
+    "routeBase": "/ccc/ddd",
+    "routeDir": "routes/ccc/ddd/",
+    "routeFile": "/ccc/ddd/_route.tsx",
     "name": "_route.tsx",
     "path": "routes/ccc/ddd/_route.tsx"
   },
   "/ccc/ddd/eee/f": {
     "route": "/ccc/ddd/eee/f/",
-    "routeDir": "ccc/ddd/eee+/f",
-    "routeFile": "ccc/ddd/eee+/f/_route.tsx",
+    "routeBase": "/ccc/ddd/eee+/f",
+    "routeDir": "routes/ccc/ddd/eee+/f/",
+    "routeFile": "/ccc/ddd/eee+/f/_route.tsx",
     "name": "_route.tsx",
     "path": "routes/ccc/ddd/eee+/f/_route.tsx"
   },
   "/ccc/ddd/eee/ff": {
     "route": "/ccc/ddd/eee/ff/",
-    "routeDir": "ccc/ddd/eee+/ff",
-    "routeFile": "ccc/ddd/eee+/ff/_route.tsx",
+    "routeBase": "/ccc/ddd/eee+/ff",
+    "routeDir": "routes/ccc/ddd/eee+/ff/",
+    "routeFile": "/ccc/ddd/eee+/ff/_route.tsx",
     "name": "_route.tsx",
     "path": "routes/ccc/ddd/eee+/ff/_route.tsx"
   },
   "/ccc/ddd/eee/fff": {
     "route": "/ccc/ddd/eee/fff/",
-    "routeDir": "ccc/ddd/eee+/fff",
-    "routeFile": "ccc/ddd/eee+/fff/_route.tsx",
+    "routeBase": "/ccc/ddd/eee+/fff",
+    "routeDir": "routes/ccc/ddd/eee+/fff/",
+    "routeFile": "/ccc/ddd/eee+/fff/_route.tsx",
     "name": "_route.tsx",
     "path": "routes/ccc/ddd/eee+/fff/_route.tsx"
   },
   "/is/a": {
     "route": "/is/a/",
-    "routeDir": "",
-    "routeFile": "is.a.route.ts",
+    "routeBase": "/is.a",
+    "routeDir": "routes/",
+    "routeFile": "/is.a.route.ts",
     "name": "is.a.route.ts",
     "path": "routes/is.a.route.ts"
   },
-  "/is/a/valid-route": {
-    "route": "/is/a/valid-route/",
-    "routeDir": "",
-    "routeFile": "is.a.valid-route.rt.jsx",
-    "name": "is.a.valid-route.rt.jsx",
-    "path": "routes/is.a.valid-route.rt.jsx"
-  },
   "/params/$A": {
     "route": "/params/$A/",
-    "routeDir": "",
-    "routeFile": "params.$A.route.ts",
+    "routeBase": "/params.$A",
+    "routeDir": "routes/",
+    "routeFile": "/params.$A.route.ts",
     "name": "params.$A.route.ts",
     "path": "routes/params.$A.route.ts"
   },
   "/params/$A/$B": {
     "route": "/params/$A/$B/",
-    "routeDir": "params",
-    "routeFile": "params/$A.$B.rt.ts",
+    "routeBase": "/params/$A.$B",
+    "routeDir": "routes/params/",
+    "routeFile": "/params/$A.$B.rt.ts",
     "name": "$A.$B.rt.ts",
     "path": "routes/params/$A.$B.rt.ts"
   },
+  "/route/is/valid": {
+    "route": "/route/is/valid/",
+    "routeBase": "/route.is.valid",
+    "routeDir": "routes/",
+    "routeFile": "/route.is.valid.rt.js",
+    "name": "route.is.valid.rt.js",
+    "path": "routes/route.is.valid.rt.js"
+  },
   "/totally/bogus": {
     "route": "/totally/bogus/",
-    "routeDir": "",
-    "routeFile": "totally.bogus.rte.ts",
+    "routeBase": "/totally.bogus",
+    "routeDir": "routes/",
+    "routeFile": "/totally.bogus.rte.ts",
     "name": "totally.bogus.rte.ts",
     "path": "routes/totally.bogus.rte.ts"
   },
   "/xxx": {
     "route": "/xxx/",
-    "routeDir": "++/xxx",
-    "routeFile": "++/xxx/_route.ts",
+    "routeBase": "/++/xxx",
+    "routeDir": "routes/++/xxx/",
+    "routeFile": "/++/xxx/_route.ts",
     "name": "_route.ts",
     "path": "routes/++/xxx/_route.ts"
   },
   "/xxx/yyy/zzz": {
     "route": "/xxx/yyy/zzz/",
-    "routeDir": "++/xxx",
-    "routeFile": "++/xxx/yyy.zzz.rt.ts",
+    "routeBase": "/++/xxx/yyy.zzz",
+    "routeDir": "routes/++/xxx/",
+    "routeFile": "/++/xxx/yyy.zzz.rt.ts",
     "name": "yyy.zzz.rt.ts",
     "path": "routes/++/xxx/yyy.zzz.rt.ts"
   }

@@ -1,4 +1,4 @@
-import { htmlDocument } from '../layouts/_main.tsx';
+import { htmlDocument } from '../layouts/_main.ts';
 
 const css = `
 <style>

@@ -1,7 +1,11 @@
 {
   "tasks": {
-    "dev": "deno run --watch main.ts"
+    "dev": "deno run --watch main.ts",
+    "find-routes": "deno -RW ./lib/walkRoutes.ts ./routes"
   },
+  //  "compilerOptions": {
+  //    "jsx": "precompile"
+  //  },
   "fmt": {
     "singleQuote": true,
     "indentWidth": 2,
@@ -12,6 +16,7 @@
     "rules": {
       "exclude": [
         "no-explicit-any",
+        "no-implicit-any",
         "no-unused-vars",
         "prefer-const"
       ]
@@ -19,6 +24,7 @@
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1",
-    "@std/fs": "jsr:@std/fs@^1.0.17"
+    "@std/fs": "jsr:@std/fs@^1.0.17",
+    "@std/path": "jsr:@std/path@^1.0.9"
   }
 }

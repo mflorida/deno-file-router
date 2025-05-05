@@ -1,3 +1,3 @@
-export function GET(_req: Request): Response {
-  return new Response(`Hello from '/ccc/ddd/eee+/ff/_route.tsx'`, { status: 200 });
-}
+import { echoResponse } from '../../../../../lib/echoResponse.ts';
+
+export const GET = (req: { url: string }) => echoResponse(req, import.meta.url);
