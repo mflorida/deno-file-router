@@ -8,7 +8,6 @@ const [routesDir = '../routes'] = Deno.args;
 
 export function walkRoutes(dir: string) {
   const routes = fs.walkSync(dir);
-  let xcount = 0;
 
   const fileRoutes = Array.from(routes).reduce((out, entry) => {
     // only process files
@@ -18,7 +17,7 @@ export function walkRoutes(dir: string) {
 
     // handle __root.* in the routes root
     const rootPath = /\/(__|\+\+)root\.[tj]sx?$/i.test(entry.path);
-    const ___route = /^(.*\.)?___\.[tj]sx?$/i;
+    const ___ = /^(.*\.)?___\.[tj]sx?$/i;
     const validRoute = /^(.*\.)?([_+]*|\.?)?r(ou)?te?\.[tj]sx?$/i;
 
     let isRoot = false;
@@ -29,7 +28,7 @@ export function walkRoutes(dir: string) {
     }
 
     // only process '___.{ts|tsx|js|jsx}' or '*{.|_}route.{ts|tsx|js|jsx}' files
-    if (!isRoot && !___route.test(entry.name) && !validRoute.test(entry.name)) {
+    if (!isRoot && !___.test(entry.name) && !validRoute.test(entry.name)) {
       return out;
     }
 
@@ -43,7 +42,7 @@ export function walkRoutes(dir: string) {
     routeDir = entry.path.split(entry.name)[0];
 
     routeBase = isRoot ? routeFile.split('.')[0] : (
-      ___route.test(entry.name)
+      ___.test(entry.name)
         ? routeFile.split(/[/.]___\.[tj]sx?/i)[0]
         : routeFile.split(/(([/.][_+]+|\.)(rte?|route)\.[tj]sx?)$/i)[0]
     );
@@ -99,9 +98,9 @@ export function writeRouteData(dir: string) {
   Deno.writeTextFileSync('.route_data.json', JSON.stringify(routeData, null, 2));
 }
 
-export function writeRouteMap(dir: string) {
+export function writeRouteMap(dir: string, fileName = '.route_map.json') {
   const routeMap = createRouteMap(dir);
-  Deno.writeTextFileSync('.route_map.json', JSON.stringify(routeMap, null, 2));
+  Deno.writeTextFileSync(fileName, JSON.stringify(routeMap, null, 2));
 }
 
 export function writeFileMap(dir: string) {

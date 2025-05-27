@@ -1,7 +1,7 @@
 {
   "tasks": {
     "dev": "deno run --watch main.ts",
-    "find-routes": "deno -RW ./lib/walkRoutes.ts ./routes"
+    "find-routes": "deno -RW ./lib/walkRoutes.ts routes"
   },
   //  "compilerOptions": {
   //    "jsx": "precompile"

@@ -1,6 +1,25 @@
-import { createRouteMap } from './lib/walkRoutes.ts';
+import { writeRouteMap } from './lib/walkRoutes.ts';
 
-const routeMap = createRouteMap('routes');
+const ROUTES_DIR = 'routes';
+const ROUTES_FILE = '.route_map.json';
+
+try {
+  // walk the 'routes' dir and write valid routes to '.route_map.json'
+  writeRouteMap(ROUTES_DIR, ROUTES_FILE);
+} catch (err) {
+  throw new Error(JSON.stringify(err));
+}
+
+let routeMap: { [key: string]: string } = {};
+
+try {
+  // *read* the '.route_map.json' file to cache valid routes in memory
+  const route_map_json = Deno.readTextFileSync(ROUTES_FILE);
+  routeMap = JSON.parse(route_map_json);
+} catch (err) {
+  throw new Error(JSON.stringify(err));
+}
+
 
 console.log(routeMap);
 
@@ -19,30 +38,37 @@ async function handler(req: Request): Promise<Response> {
 
   // special things that only run from the same origin
   // poor man's CORS for same-origin
-  if (url.origin.includes(url.host)) {
-    // special url pathname to list all cached routes
-    // http://hostname:3000/--/route-cache/
-    if (/GET/i.test(req.method) && /^\/--\/route-cache/.test(pathname)) {
+  if (/^\/---\//.test(pathname)) {
+    // only allow access to /---/* paths from same host
+    if (url.origin.includes(url.host)) {
+      // special url pathname to list all cached routes
+      // http://hostname:3000/---/routes/
+      if (/GET/i.test(req.method) && /(\/+---\/+routes(\/+)?)$/.test(pathname)) {
+        return new Response(
+          JSON.stringify(routeMap, null, 2),
+          {
+            status: 200,
+            statusText: 'OK',
+            headers: { 'content-type': 'application/json' },
+          },
+        );
+      }
+    } else {
       return new Response(
-        JSON.stringify(routeMap, null, 2),
-        { status: 200, statusText: 'OK' },
+        'No access.',
+        {
+          status: 405,
+          statusText: 'Not Allowed',
+        },
       );
     }
   }
 
-  // only slashes??? it's the ROOT!
-  // const rootPath = /^\/+$/.test(pathname) ? '__root' : '';
+  let fileRoute = '';
 
-  // direct check
-  let fileRoute = (
-    // (rootPath ? 'routes/__root' : '') ||
-    routeMap[pathname] ||
-    ''
-  );
-
-  fileRoute = './routes' + fileRoute;
-
-  if (!fileRoute) {
+  if (routeMap[pathname]) {
+    fileRoute = './' + ROUTES_DIR + (routeMap[pathname] || '');
+  } else {
     return new Response(`Not found: ${pathname}`, { status: 404 });
   }
 

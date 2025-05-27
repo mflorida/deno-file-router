@@ -7,6 +7,14 @@
     "name": "__root.tsx",
     "path": "routes/__root.tsx"
   },
+  "/---/route-list": {
+    "route": "/---/route-list/",
+    "routeBase": "/---/route-list",
+    "routeDir": "routes/---/",
+    "routeFile": "/---/route-list.route.ts",
+    "name": "route-list.route.ts",
+    "path": "routes/---/route-list.route.ts"
+  },
   "/-/api": {
     "route": "/-/api/",
     "routeBase": "/++/-/api/+",
@@ -83,9 +91,9 @@
     "route": "/-/api/foo/+++/",
     "routeBase": "/++/-/api/foo/++!+++!++",
     "routeDir": "routes/++/-/api/foo/++!+++!++/",
-    "routeFile": "/++/-/api/foo/++!+++!++/__route.jsx",
-    "name": "__route.jsx",
-    "path": "routes/++/-/api/foo/++!+++!++/__route.jsx"
+    "routeFile": "/++/-/api/foo/++!+++!++/++route.jsx",
+    "name": "++route.jsx",
+    "path": "routes/++/-/api/foo/++!+++!++/++route.jsx"
   },
   "/-/api/foo/+-+": {
     "route": "/-/api/foo/+-+/",
@@ -127,6 +135,22 @@
     "name": "__x__.rt.ts",
     "path": "routes/++/-/api/__x__.rt.ts"
   },
+  "/a/b/c/d/e": {
+    "route": "/a/b/c/d/e/",
+    "routeBase": "/a.b.c.d.e",
+    "routeDir": "routes/a.b.c.d.e/",
+    "routeFile": "/a.b.c.d.e/__route.ts",
+    "name": "__route.ts",
+    "path": "routes/a.b.c.d.e/__route.ts"
+  },
+  "/a/b/c/d/e/f/g/h/i/j/k": {
+    "route": "/a/b/c/d/e/f/g/h/i/j/k/",
+    "routeBase": "/a.b.c.d.e/f.g.h.i.j.k",
+    "routeDir": "routes/a.b.c.d.e/",
+    "routeFile": "/a.b.c.d.e/f.g.h.i.j.k.route.ts",
+    "name": "f.g.h.i.j.k.route.ts",
+    "path": "routes/a.b.c.d.e/f.g.h.i.j.k.route.ts"
+  },
   "/aaa/111": {
     "route": "/aaa/111/",
     "routeBase": "/aaa+/111",
@@ -134,14 +158,6 @@
     "routeFile": "/aaa+/111/_route.ts",
     "name": "_route.ts",
     "path": "routes/aaa+/111/_route.ts"
-  },
-  "/b/c/d/e": {
-    "route": "/b/c/d/e/",
-    "routeBase": "/b.c.d.e",
-    "routeDir": "routes/b.c.d.e/",
-    "routeFile": "/b.c.d.e/_rt.ts",
-    "name": "_rt.ts",
-    "path": "routes/b.c.d.e/_rt.ts"
   },
   "/ccc": {
     "route": "/ccc/",
