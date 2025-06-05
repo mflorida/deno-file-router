@@ -16,8 +16,8 @@ export function walkRoutes(dir: string) {
     }
 
     // handle __root.* in the routes root
-    const rootPath = /\/(__|\+\+)root\.[tj]sx?$/i.test(entry.path);
-    const ___ = /^(.*\.)?___\.[tj]sx?$/i;
+    const rootPath = /\/(_{2}|\+{2})root\.[tj]sx?$/i.test(entry.path);
+    const ___ = /^(.*\.)?(_{3}|\+{3})\.[tj]sx?$/i;
     const validRoute = /^(.*\.)?([_+]*|\.?)?r(ou)?te?\.[tj]sx?$/i;
 
     let isRoot = false;

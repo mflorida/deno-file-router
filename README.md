@@ -28,9 +28,9 @@ The `__root.tsx` file will be used for the site's root url `/`.
 For example, the following files would all route to the same url path. The various file naming
 conventions shown below would all map to the `/path/to/file/` url (relative to the server root).
 
-> Route files are stored in the `/routes/` directory and are listed below in the order of precedence
-> as they would be resolved on a Linux system (the first file found by the route walker 'wins'
-> and may be different depending on operating system).
+Route files are stored in the `/routes/` directory and are listed below in the order of precedence
+as they would be resolved on a Linux system (the first file found by the route walker 'wins'
+and may be different depending on operating system).
 
 | url              | full file path              | folder             | file                    |
 |------------------|-----------------------------|--------------------|-------------------------|
@@ -49,9 +49,9 @@ As you can see, the options are dizzying and could be confusing if mixed and mat
 
 The least confusing and suggested file naming patterns are:
 
-- `/path/to/file/route.ts` (no prefix)
 - `/path/to/file/_route.ts` (underscore `_` prefix)
 - `/path/to/file/+route.ts` (plus `+` prefix)
+- `/path/to/file/route.ts` (no prefix - it will work, but a prefix is recommended)
 
 The folder names match the url path and a file named `_route.ts` (using a prefix of
 `_` or `+` is recommended to sort the route file first in the directory listing). The
@@ -62,12 +62,12 @@ the supported patterns, like:
 - `/path/to/file/foo.route.ts` would match the url `/path/to/file/foo/`
 - `/path/to/file/foo/_route.ts` also matches and uses the folder name convention
 
-Or files names similar to Remix v2 style, with a `.route.ts` suffix:
+You can also use a Remix v2 naming scheme, with a `.` delimiter and a `.route.ts` suffix:
 
 - `path.to.file.route.ts` - `/path/to/file/`
 - `path.to.file.foo.route.ts` - `path/to/file/foo/`
 
-> `*.rte.ts` and `*.rt.ts` are also supported
+> `*.rte.ts` and `*.rt.ts` suffixes are also supported
 
 The naming conventions can get convoluted, so picking a _single_ pattern to use throughout the _entire_ project is very
 important. The rules are listed below.
