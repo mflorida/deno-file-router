@@ -1,5 +1,5 @@
 {
-  "/!-.api.say.whatever.route.ts": "/-/api/say/whatever/",
+  "/++/-/api.say.whatever.route.ts": "/-/api/say/whatever/",
   "/++/-/api/!+x+!.rt.ts": "/-/api/+x+/",
   "/++/-/api/!_x_!.rt.ts": "/-/api/_x_/",
   "/++/-/api/++/bogus.rt.tsx": "/-/api/bogus/",

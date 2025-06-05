@@ -15,7 +15,7 @@
   "/-/api/say/": "/++/-/api/say/+rt.ts",
   "/-/api/say/goodbye/": "/++/-/api/say/_goodbye/_route.ts",
   "/-/api/say/hello/": "/++/-/api/say/__hello/_route.ts",
-  "/-/api/say/whatever/": "/!-.api.say.whatever.route.ts",
+  "/-/api/say/whatever/": "/++/-/api.say.whatever.route.ts",
   "/-/api/x/": "/++/-/api/__x__.rt.ts",
   "/a/b/c/d/e/": "/a.b.c.d.e/__route.ts",
   "/a/b/c/d/e/f/g/h/i/j/k/": "/a.b.c.d.e/f.g.h.i.j.k.route.ts",

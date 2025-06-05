@@ -129,11 +129,11 @@
   },
   "/-/api/say/whatever": {
     "route": "/-/api/say/whatever/",
-    "routeBase": "/!-.api.say.whatever",
-    "routeDir": "routes/",
-    "routeFile": "/!-.api.say.whatever.route.ts",
-    "name": "!-.api.say.whatever.route.ts",
-    "path": "routes/!-.api.say.whatever.route.ts"
+    "routeBase": "/++/-/api.say.whatever",
+    "routeDir": "routes/++/-/",
+    "routeFile": "/++/-/api.say.whatever.route.ts",
+    "name": "api.say.whatever.route.ts",
+    "path": "routes/++/-/api.say.whatever.route.ts"
   },
   "/-/api/x": {
     "route": "/-/api/x/",
