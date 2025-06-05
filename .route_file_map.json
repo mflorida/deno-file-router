@@ -1,4 +1,5 @@
 {
+  "/!-.api.say.whatever.route.ts": "/-/api/say/whatever/",
   "/++/-/api/!+x+!.rt.ts": "/-/api/+x+/",
   "/++/-/api/!_x_!.rt.ts": "/-/api/_x_/",
   "/++/-/api/++/bogus.rt.tsx": "/-/api/bogus/",
@@ -26,6 +27,8 @@
   "/ccc/ddd/eee+/f/_route.tsx": "/ccc/ddd/eee/f/",
   "/ccc/ddd/eee+/ff/_route.tsx": "/ccc/ddd/eee/ff/",
   "/ccc/ddd/eee+/fff/_route.tsx": "/ccc/ddd/eee/fff/",
+  "/ccc/ddd/eee+/fff/ggg.rte.tsx": "/ccc/ddd/eee/fff/ggg/",
+  "/ccc/ddd/eee+/fff/ggg/hhh.iii.route.tsx": "/ccc/ddd/eee/fff/ggg/hhh/iii/",
   "/is.a.route.ts": "/is/a/",
   "/params.$A.route.ts": "/params/$A/",
   "/params/$A.$B.rt.ts": "/params/$A/$B/",

@@ -127,6 +127,14 @@
     "name": "_route.ts",
     "path": "routes/++/-/api/say/__hello/_route.ts"
   },
+  "/-/api/say/whatever": {
+    "route": "/-/api/say/whatever/",
+    "routeBase": "/!-.api.say.whatever",
+    "routeDir": "routes/",
+    "routeFile": "/!-.api.say.whatever.route.ts",
+    "name": "!-.api.say.whatever.route.ts",
+    "path": "routes/!-.api.say.whatever.route.ts"
+  },
   "/-/api/x": {
     "route": "/-/api/x/",
     "routeBase": "/++/-/api/__x__",
@@ -198,6 +206,22 @@
     "routeFile": "/ccc/ddd/eee+/fff/_route.tsx",
     "name": "_route.tsx",
     "path": "routes/ccc/ddd/eee+/fff/_route.tsx"
+  },
+  "/ccc/ddd/eee/fff/ggg": {
+    "route": "/ccc/ddd/eee/fff/ggg/",
+    "routeBase": "/ccc/ddd/eee+/fff/ggg",
+    "routeDir": "routes/ccc/ddd/eee+/fff/",
+    "routeFile": "/ccc/ddd/eee+/fff/ggg.rte.tsx",
+    "name": "ggg.rte.tsx",
+    "path": "routes/ccc/ddd/eee+/fff/ggg.rte.tsx"
+  },
+  "/ccc/ddd/eee/fff/ggg/hhh/iii": {
+    "route": "/ccc/ddd/eee/fff/ggg/hhh/iii/",
+    "routeBase": "/ccc/ddd/eee+/fff/ggg/hhh.iii",
+    "routeDir": "routes/ccc/ddd/eee+/fff/ggg/",
+    "routeFile": "/ccc/ddd/eee+/fff/ggg/hhh.iii.route.tsx",
+    "name": "hhh.iii.route.tsx",
+    "path": "routes/ccc/ddd/eee+/fff/ggg/hhh.iii.route.tsx"
   },
   "/is/a": {
     "route": "/is/a/",
