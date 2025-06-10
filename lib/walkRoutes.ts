@@ -114,4 +114,6 @@ if (Deno.args.length) {
   writeRouteData(routesDir);
   writeRouteMap(routesDir);
   writeFileMap(routesDir);
+  // write the raw output from the fs.walkSync(dir) function.
+  Deno.writeTextFileSync('.routes.json', JSON.stringify(Array.from(fs.walkSync(routesDir)), null, 2));
 }
