@@ -159,13 +159,21 @@
     "name": "f.g.h.i.j.k.route.ts",
     "path": "routes/a.b.c.d.e/f.g.h.i.j.k.route.ts"
   },
-  "/aaa/111": {
-    "route": "/aaa/111/",
-    "routeBase": "/aaa+/111",
-    "routeDir": "routes/aaa+/111/",
-    "routeFile": "/aaa+/111/_route.ts",
-    "name": "_route.ts",
-    "path": "routes/aaa+/111/_route.ts"
+  "/aaa": {
+    "route": "/aaa/",
+    "routeBase": "/aaa+",
+    "routeDir": "routes/aaa+/",
+    "routeFile": "/aaa+/+route.ts",
+    "name": "+route.ts",
+    "path": "routes/aaa+/+route.ts"
+  },
+  "/bbb": {
+    "route": "/bbb/",
+    "routeBase": "/__/bbb",
+    "routeDir": "routes/__/",
+    "routeFile": "/__/bbb.route.ts",
+    "name": "bbb.route.ts",
+    "path": "routes/__/bbb.route.ts"
   },
   "/ccc": {
     "route": "/ccc/",
@@ -231,6 +239,70 @@
     "name": "is.a.route.ts",
     "path": "routes/is.a.route.ts"
   },
+  "/math/$$n/average": {
+    "route": "/math/$$n/average/",
+    "routeBase": "/math/$$n/average",
+    "routeDir": "routes/math/$$n/",
+    "routeFile": "/math/$$n/average.route.ts",
+    "name": "average.route.ts",
+    "path": "routes/math/$$n/average.route.ts"
+  },
+  "/math/$$n/max": {
+    "route": "/math/$$n/max/",
+    "routeBase": "/math/$$n/max",
+    "routeDir": "routes/math/$$n/",
+    "routeFile": "/math/$$n/max.route.ts",
+    "name": "max.route.ts",
+    "path": "routes/math/$$n/max.route.ts"
+  },
+  "/math/$$n/mean": {
+    "route": "/math/$$n/mean/",
+    "routeBase": "/math/$$n/mean",
+    "routeDir": "routes/math/$$n/",
+    "routeFile": "/math/$$n/mean.route.ts",
+    "name": "mean.route.ts",
+    "path": "routes/math/$$n/mean.route.ts"
+  },
+  "/math/$$n/median": {
+    "route": "/math/$$n/median/",
+    "routeBase": "/math/$$n/median",
+    "routeDir": "routes/math/$$n/",
+    "routeFile": "/math/$$n/median.route.ts",
+    "name": "median.route.ts",
+    "path": "routes/math/$$n/median.route.ts"
+  },
+  "/math/$$n/min": {
+    "route": "/math/$$n/min/",
+    "routeBase": "/math/$$n/min",
+    "routeDir": "routes/math/$$n/",
+    "routeFile": "/math/$$n/min.route.ts",
+    "name": "min.route.ts",
+    "path": "routes/math/$$n/min.route.ts"
+  },
+  "/math/$$n/product": {
+    "route": "/math/$$n/product/",
+    "routeBase": "/math/$$n/product",
+    "routeDir": "routes/math/$$n/",
+    "routeFile": "/math/$$n/product.route.ts",
+    "name": "product.route.ts",
+    "path": "routes/math/$$n/product.route.ts"
+  },
+  "/math/$$n/sum": {
+    "route": "/math/$$n/sum/",
+    "routeBase": "/math/$$n/sum",
+    "routeDir": "routes/math/$$n/",
+    "routeFile": "/math/$$n/sum.route.ts",
+    "name": "sum.route.ts",
+    "path": "routes/math/$$n/sum.route.ts"
+  },
+  "/math/sum/$$nn": {
+    "route": "/math/sum/$$nn/",
+    "routeBase": "/math/sum/$$nn",
+    "routeDir": "routes/math/sum/",
+    "routeFile": "/math/sum/$$nn.route.ts",
+    "name": "$$nn.route.ts",
+    "path": "routes/math/sum/$$nn.route.ts"
+  },
   "/params/$A": {
     "route": "/params/$A/",
     "routeBase": "/params.$A",
@@ -239,13 +311,29 @@
     "name": "params.$A.route.ts",
     "path": "routes/params.$A.route.ts"
   },
-  "/params/$A/$B": {
-    "route": "/params/$A/$B/",
-    "routeBase": "/params/$A.$B",
-    "routeDir": "routes/params/",
-    "routeFile": "/params/$A.$B.rt.ts",
-    "name": "$A.$B.rt.ts",
-    "path": "routes/params/$A.$B.rt.ts"
+  "/params/$A/$B/$C": {
+    "route": "/params/$A/$B/$C/",
+    "routeBase": "/params/$A.$B.$C",
+    "routeDir": "routes/params/$A.$B.$C/",
+    "routeFile": "/params/$A.$B.$C/++route.ts",
+    "name": "++route.ts",
+    "path": "routes/params/$A.$B.$C/++route.ts"
+  },
+  "/params/$A/$B/$C/$C": {
+    "route": "/params/$A/$B/$C/$C/",
+    "routeBase": "/params/$A.$B.$C/$C",
+    "routeDir": "routes/params/$A.$B.$C/",
+    "routeFile": "/params/$A.$B.$C/$C.route.ts",
+    "name": "$C.route.ts",
+    "path": "routes/params/$A.$B.$C/$C.route.ts"
+  },
+  "/params/$A/$B/$C/$C/$$": {
+    "route": "/params/$A/$B/$C/$C/$$/",
+    "routeBase": "/params/$A.$B.$C/$C.$$",
+    "routeDir": "routes/params/$A.$B.$C/",
+    "routeFile": "/params/$A.$B.$C/$C.$$.route.ts",
+    "name": "$C.$$.route.ts",
+    "path": "routes/params/$A.$B.$C/$C.$$.route.ts"
   },
   "/route/is/valid": {
     "route": "/route/is/valid/",
@@ -263,20 +351,36 @@
     "name": "totally.bogus.rte.ts",
     "path": "routes/totally.bogus.rte.ts"
   },
-  "/xxx": {
-    "route": "/xxx/",
-    "routeBase": "/++/xxx",
-    "routeDir": "routes/++/xxx/",
-    "routeFile": "/++/xxx/_route.ts",
-    "name": "_route.ts",
-    "path": "routes/++/xxx/_route.ts"
+  "/xx": {
+    "route": "/xx/",
+    "routeBase": "/++/xx/___",
+    "routeDir": "routes/++/xx/",
+    "routeFile": "/++/xx/___.route.ts",
+    "name": "___.route.ts",
+    "path": "routes/++/xx/___.route.ts"
   },
-  "/xxx/yyy/zzz": {
-    "route": "/xxx/yyy/zzz/",
-    "routeBase": "/++/xxx/yyy.zzz",
-    "routeDir": "routes/++/xxx/",
-    "routeFile": "/++/xxx/yyy.zzz.rt.ts",
-    "name": "yyy.zzz.rt.ts",
-    "path": "routes/++/xxx/yyy.zzz.rt.ts"
+  "/xx/$$": {
+    "route": "/xx/$$/",
+    "routeBase": "/++/xx/___.$$",
+    "routeDir": "routes/++/xx/",
+    "routeFile": "/++/xx/___.$$.route.ts",
+    "name": "___.$$.route.ts",
+    "path": "routes/++/xx/___.$$.route.ts"
+  },
+  "/xx/yy": {
+    "route": "/xx/yy/",
+    "routeBase": "/++/xx/_yy",
+    "routeDir": "routes/++/xx/",
+    "routeFile": "/++/xx/_yy.route.ts",
+    "name": "_yy.route.ts",
+    "path": "routes/++/xx/_yy.route.ts"
+  },
+  "/xx/yy/zz": {
+    "route": "/xx/yy/zz/",
+    "routeBase": "/++/xx/__yy.zz",
+    "routeDir": "routes/++/xx/",
+    "routeFile": "/++/xx/__yy.zz.route.ts",
+    "name": "__yy.zz.route.ts",
+    "path": "routes/++/xx/__yy.zz.route.ts"
   }
 }
