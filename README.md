@@ -100,12 +100,14 @@ flexible but can be a major foot gun if not handled with care.
 
 To summarize the rules for mapping urls to file names:
 
+[//]: # (TODO: create special section for 'special' or 'reserved' characters '_' and '+' [and others?])
+
 - A file named `{_+}?route.{js|jsx|ts|tsx}` will be resolved for a url matching its _directory_ path from `/routes/`
 - A file with a `.route` suffix will be resolved for a url matching the name up to (but not including) that suffix.
-- Any `_` and `+` characters in each path segment will be stripped when matching the url
-- Use `!` as a 'guard' to preserve `_` or `+` characters that need to be at the beginning or end of a _url_ segment.
+- All `_` and `+` prefixes or suffixes in each path segment will be stripped when matching the url
+- Use `!` as a 'guard' to allow use of `_` or `+` characters at the beginning or end of a url segment.
 
 ### TODO:
 
-- Handle parameters that are part of url segments.
+- Handle parameters that are part of url segments?
 - ?
