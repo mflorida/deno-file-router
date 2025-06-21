@@ -7,6 +7,300 @@
     "isSymlink": false
   },
   {
+    "path": "routes/++",
+    "name": "++",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-",
+    "name": "-",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api",
+    "name": "api",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/!+x+!.rt.ts",
+    "name": "!+x+!.rt.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/!_x_!.rt.ts",
+    "name": "!_x_!.rt.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/+",
+    "name": "+",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/+/___.js",
+    "name": "___.js",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/++",
+    "name": "++",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/++/bogus.rt.tsx",
+    "name": "bogus.rt.tsx",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/bar",
+    "name": "bar",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/bar/baz.route.ts",
+    "name": "baz.route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/bar/___.ts",
+    "name": "___.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/foo",
+    "name": "foo",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/foo/!+!",
+    "name": "!+!",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/foo/!+!/___.jsx",
+    "name": "___.jsx",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/foo/+!++!+",
+    "name": "+!++!+",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/foo/+!++!+/___.ts",
+    "name": "___.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/foo/++!+++!++",
+    "name": "++!+++!++",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/foo/++!+++!++/++route.jsx",
+    "name": "++route.jsx",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/foo/++!+++!++/not-a-route.jsx",
+    "name": "not-a-route.jsx",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/foo/_route.ts",
+    "name": "_route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/foo/__!+-+!__",
+    "name": "__!+-+!__",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/foo/__!+-+!__/_route.ts",
+    "name": "_route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/say",
+    "name": "say",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/say/+rt.ts",
+    "name": "+rt.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/say/_goodbye",
+    "name": "_goodbye",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/say/_goodbye/_route.ts",
+    "name": "_route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/say/__hello",
+    "name": "__hello",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/say/__hello/_route.ts",
+    "name": "_route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/-/api/__x__.rt.ts",
+    "name": "__x__.rt.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/xx",
+    "name": "xx",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/xx/_yy.route.ts",
+    "name": "_yy.route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/xx/__yy.zz.route.ts",
+    "name": "__yy.zz.route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/xx/___.$$.route.ts",
+    "name": "___.$$.route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/++/xx/___.route.ts",
+    "name": "___.route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/-",
+    "name": "-",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/-/api.say.whatever.route.ts",
+    "name": "api.say.whatever.route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/---",
+    "name": "---",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/---/route-list.route.ts",
+    "name": "route-list.route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/a.b.c.d.e",
+    "name": "a.b.c.d.e",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/a.b.c.d.e/f.g.h.i.j.k.route.ts",
+    "name": "f.g.h.i.j.k.route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/a.b.c.d.e/__route.ts",
+    "name": "__route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
     "path": "routes/aaa+",
     "name": "aaa+",
     "isFile": false,
@@ -35,90 +329,6 @@
     "isSymlink": false
   },
   {
-    "path": "routes/ccc/ddd",
-    "name": "ddd",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/ccc/ddd/_route.tsx",
-    "name": "_route.tsx",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/ccc/ddd/eee+",
-    "name": "eee+",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/ccc/ddd/eee+/f",
-    "name": "f",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/ccc/ddd/eee+/f/_route.tsx",
-    "name": "_route.tsx",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/ccc/ddd/eee+/fff",
-    "name": "fff",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/ccc/ddd/eee+/fff/ggg.rte.tsx",
-    "name": "ggg.rte.tsx",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/ccc/ddd/eee+/fff/_route.tsx",
-    "name": "_route.tsx",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/ccc/ddd/eee+/fff/ggg",
-    "name": "ggg",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/ccc/ddd/eee+/fff/ggg/hhh.iii.route.tsx",
-    "name": "hhh.iii.route.tsx",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/ccc/ddd/eee+/ff",
-    "name": "ff",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/ccc/ddd/eee+/ff/_route.tsx",
-    "name": "_route.tsx",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
     "path": "routes/ccc/_route.tsx",
     "name": "_route.tsx",
     "isFile": true,
@@ -126,351 +336,106 @@
     "isSymlink": false
   },
   {
-    "path": "routes/route.is.valid.rt.js",
-    "name": "route.is.valid.rt.js",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/__",
-    "name": "__",
+    "path": "routes/ccc.ddd",
+    "name": "ccc.ddd",
     "isFile": false,
     "isDirectory": true,
     "isSymlink": false
   },
   {
-    "path": "routes/__/bbb.route.ts",
-    "name": "bbb.route.ts",
+    "path": "routes/ccc.ddd/_route.tsx",
+    "name": "_route.tsx",
     "isFile": true,
     "isDirectory": false,
     "isSymlink": false
   },
   {
-    "path": "routes/++",
-    "name": "++",
+    "path": "routes/ccc.ddd.eee+",
+    "name": "ccc.ddd.eee+",
     "isFile": false,
     "isDirectory": true,
     "isSymlink": false
   },
   {
-    "path": "routes/++/-",
-    "name": "-",
+    "path": "routes/ccc.ddd.eee+/f",
+    "name": "f",
     "isFile": false,
     "isDirectory": true,
     "isSymlink": false
   },
   {
-    "path": "routes/++/-/api",
-    "name": "api",
+    "path": "routes/ccc.ddd.eee+/f/_route.tsx",
+    "name": "_route.tsx",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/ccc.ddd.eee+/ff",
+    "name": "ff",
     "isFile": false,
     "isDirectory": true,
     "isSymlink": false
   },
   {
-    "path": "routes/++/-/api/!_x_!.rt.ts",
-    "name": "!_x_!.rt.ts",
+    "path": "routes/ccc.ddd.eee+/ff/_route.tsx",
+    "name": "_route.tsx",
     "isFile": true,
     "isDirectory": false,
     "isSymlink": false
   },
   {
-    "path": "routes/++/-/api/__x__.rt.ts",
-    "name": "__x__.rt.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/say",
-    "name": "say",
+    "path": "routes/ccc.ddd.eee+/fff",
+    "name": "fff",
     "isFile": false,
     "isDirectory": true,
     "isSymlink": false
   },
   {
-    "path": "routes/++/-/api/say/__hello",
-    "name": "__hello",
+    "path": "routes/ccc.ddd.eee+/fff/ggg+",
+    "name": "ggg+",
     "isFile": false,
     "isDirectory": true,
     "isSymlink": false
   },
   {
-    "path": "routes/++/-/api/say/__hello/_route.ts",
-    "name": "_route.ts",
+    "path": "routes/ccc.ddd.eee+/fff/ggg+/hhh.iii.route.tsx",
+    "name": "hhh.iii.route.tsx",
     "isFile": true,
     "isDirectory": false,
     "isSymlink": false
   },
   {
-    "path": "routes/++/-/api/say/+rt.ts",
-    "name": "+rt.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/say/_goodbye",
-    "name": "_goodbye",
+    "path": "routes/ccc.ddd.eee+/fff/ggg+.hhh+",
+    "name": "ggg+.hhh+",
     "isFile": false,
     "isDirectory": true,
     "isSymlink": false
   },
   {
-    "path": "routes/++/-/api/say/_goodbye/_route.ts",
-    "name": "_route.ts",
+    "path": "routes/ccc.ddd.eee+/fff/ggg+.hhh+/_route.tsx",
+    "name": "_route.tsx",
     "isFile": true,
     "isDirectory": false,
     "isSymlink": false
   },
   {
-    "path": "routes/++/-/api/++",
-    "name": "++",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/++/bogus.rt.tsx",
-    "name": "bogus.rt.tsx",
+    "path": "routes/ccc.ddd.eee+/fff/ggg.route.tsx",
+    "name": "ggg.route.tsx",
     "isFile": true,
     "isDirectory": false,
     "isSymlink": false
   },
   {
-    "path": "routes/++/-/api/!+x+!.rt.ts",
-    "name": "!+x+!.rt.ts",
+    "path": "routes/ccc.ddd.eee+/fff/_route.tsx",
+    "name": "_route.tsx",
     "isFile": true,
     "isDirectory": false,
     "isSymlink": false
   },
   {
-    "path": "routes/++/-/api/bar",
-    "name": "bar",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/bar/baz.route.ts",
-    "name": "baz.route.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/bar/___.ts",
-    "name": "___.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/+",
-    "name": "+",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/+/___.js",
-    "name": "___.js",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/foo",
-    "name": "foo",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/foo/+!++!+",
-    "name": "+!++!+",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/foo/+!++!+/___.ts",
-    "name": "___.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/foo/__!+-+!__",
-    "name": "__!+-+!__",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/foo/__!+-+!__/_route.ts",
-    "name": "_route.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/foo/!+!",
-    "name": "!+!",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/foo/!+!/___.jsx",
-    "name": "___.jsx",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/foo/_route.ts",
-    "name": "_route.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/foo/++!+++!++",
-    "name": "++!+++!++",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/foo/++!+++!++/++route.jsx",
-    "name": "++route.jsx",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api/foo/++!+++!++/not-a-route.jsx",
-    "name": "not-a-route.jsx",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/-/api.say.whatever.route.ts",
-    "name": "api.say.whatever.route.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/xx",
-    "name": "xx",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/xx/__yy.zz.route.ts",
-    "name": "__yy.zz.route.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/xx/___.route.ts",
-    "name": "___.route.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/xx/_yy.route.ts",
-    "name": "_yy.route.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/++/xx/___.$$.route.ts",
-    "name": "___.$$.route.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/totally.bogus.rte.ts",
-    "name": "totally.bogus.rte.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/params.$A.route.ts",
-    "name": "params.$A.route.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/not_a_route.ts",
-    "name": "not_a_route.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/params",
-    "name": "params",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/params/$A.$B.$C",
-    "name": "$A.$B.$C",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/params/$A.$B.$C/$C.$$.route.ts",
-    "name": "$C.$$.route.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/params/$A.$B.$C/++route.ts",
-    "name": "++route.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/params/$A.$B.$C/$C.route.ts",
-    "name": "$C.route.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/a.b.c.d.e",
-    "name": "a.b.c.d.e",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/a.b.c.d.e/__route.ts",
-    "name": "__route.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/a.b.c.d.e/f.g.h.i.j.k.route.ts",
-    "name": "f.g.h.i.j.k.route.ts",
+    "path": "routes/ccc.ddd.eee+/_route.tsx",
+    "name": "_route.tsx",
     "isFile": true,
     "isDirectory": false,
     "isSymlink": false
@@ -478,27 +443,6 @@
   {
     "path": "routes/is.a.route.ts",
     "name": "is.a.route.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/__root.tsx",
-    "name": "__root.tsx",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/---",
-    "name": "---",
-    "isFile": false,
-    "isDirectory": true,
-    "isSymlink": false
-  },
-  {
-    "path": "routes/---/route-list.route.ts",
-    "name": "route-list.route.ts",
     "isFile": true,
     "isDirectory": false,
     "isSymlink": false
@@ -518,6 +462,13 @@
     "isSymlink": false
   },
   {
+    "path": "routes/math/$$n/average.route.ts",
+    "name": "average.route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
     "path": "routes/math/$$n/max.route.ts",
     "name": "max.route.ts",
     "isFile": true,
@@ -532,8 +483,8 @@
     "isSymlink": false
   },
   {
-    "path": "routes/math/$$n/average.route.ts",
-    "name": "average.route.ts",
+    "path": "routes/math/$$n/median.route.ts",
+    "name": "median.route.ts",
     "isFile": true,
     "isDirectory": false,
     "isSymlink": false
@@ -546,13 +497,6 @@
     "isSymlink": false
   },
   {
-    "path": "routes/math/$$n/sum.route.ts",
-    "name": "sum.route.ts",
-    "isFile": true,
-    "isDirectory": false,
-    "isSymlink": false
-  },
-  {
     "path": "routes/math/$$n/product.route.ts",
     "name": "product.route.ts",
     "isFile": true,
@@ -560,8 +504,8 @@
     "isSymlink": false
   },
   {
-    "path": "routes/math/$$n/median.route.ts",
-    "name": "median.route.ts",
+    "path": "routes/math/$$n/sum.route.ts",
+    "name": "sum.route.ts",
     "isFile": true,
     "isDirectory": false,
     "isSymlink": false
@@ -576,6 +520,104 @@
   {
     "path": "routes/math/sum/$$nn.route.ts",
     "name": "$$nn.route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/not.not._a.route.ts",
+    "name": "not.not._a.route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/not._a_route.ts",
+    "name": "not._a_route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/params",
+    "name": "params",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/params/$A.$B.$$",
+    "name": "$A.$B.$$",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/params/$A.$B.$$/$D.$$.route.ts",
+    "name": "$D.$$.route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/params/$A.$B.$$/$D.route.ts",
+    "name": "$D.route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/params/$A.$B.$$/++route.ts",
+    "name": "++route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/params/$A.$B.route.ts",
+    "name": "$A.$B.route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/params.$A.route.ts",
+    "name": "params.$A.route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/route.is.valid.rt.js",
+    "name": "route.is.valid.rt.js",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/totally.bogus.rte.ts",
+    "name": "totally.bogus.rte.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/__",
+    "name": "__",
+    "isFile": false,
+    "isDirectory": true,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/__/bbb.route.ts",
+    "name": "bbb.route.ts",
+    "isFile": true,
+    "isDirectory": false,
+    "isSymlink": false
+  },
+  {
+    "path": "routes/__root.tsx",
+    "name": "__root.tsx",
     "isFile": true,
     "isDirectory": false,
     "isSymlink": false
